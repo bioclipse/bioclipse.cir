@@ -15,10 +15,6 @@
 Eclipse Public License.
    </copyright>
 
-   <url>
-      <discovery label="Chemical Identifier Resolver Homepage" url="http://cactus.nci.nih.gov/chemical/structure"/>
-   </url>
-
    <requires>
       <import plugin="org.openscience.cdk.io"/>
       <import plugin="org.openscience.cdk.core"/>
