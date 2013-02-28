@@ -55,7 +55,7 @@ public class CirManager implements IBioclipseManager {
 				throw new BioclipseException("HTML page returned: probably multiple search hits");
 			}
 			InputStream reader = method.getResponseBodyAsStream();
-			return cdk.loadMolecule(reader, (IChemFormat)MDLV2000Format.getInstance(), null);
+			return cdk.loadMolecule(reader, (IChemFormat)MDLV2000Format.getInstance(), null,null);
 		} catch (HttpException exception) {
 			throw new BioclipseException("Error while accessing CIR: " + exception.getMessage(), exception);
 		} catch (IOException exception) {
